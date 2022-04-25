@@ -8,21 +8,38 @@
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/favicon152.png">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header>
-    <a>
-      <img src="img/logo.svg" alt="Логотип Device" width="164" height="36">
-    </a>
-    <form action="index.html" method="get">
-      <input type="search" placeholder="Поиск по сайту">
-      <button type="submit">Найти</button>
-    </form>
-    <a href="#">Войти</a>
-    <a href="#">Сравнить</a>
-    <a href="#">Корзина</a>
-    <nav>
+  <header class="main-header">
+    <div class="main-logo">
+      <a>
+        <img src="img/logo.svg" alt="Логотип Device" width="163" height="35">
+      </a>
+    </div>
+    <div class="search-form-container">
+      <form class="search-form" action="" method="post">
+        <input class="search-form__input" type="text" name="search-form__input" placeholder="Поиск по сайту">
+        <button class="search-form__button" type="submit">Найти</button>
+        <div class="search-form__underline"></div>
+      </form>
+    </div>
+
+
+    <div class="user-action">
+
+      <a class="user-action__sign-in" href="#">Войти</a>
+
+      <a class="user-action__compare" href="#">Сравнить</a>
+
+      <a class="user-action__cart" href="#">Корзина</a>
+
+    </div>
+
+    <nav class="main-header-nav">
       <details>
         <summary>Каталог товаров</summary>
         <ul>

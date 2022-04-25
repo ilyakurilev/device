@@ -52,3 +52,139 @@
 
   --special-pink-light: #f6dada;
 }
+
+/* Global */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  color: var(--basic-black);
+}
+
+h2 {
+  font-family: "Gilroy";
+  font-weight: 800;
+  font-size: 47px;
+}
+
+/* Header */
+
+.main-header {
+  background-color: var(--special-yellow-light);
+}
+
+.main-header-nav {
+  font-family: "Gilroy";
+  font-weight: 800;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.main-header-nav ul {
+  list-style: none;
+}
+
+/* search-form */
+
+.search-form-container {
+  width: 440px;
+  position: relative;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-form::before {
+  content: "";
+  background: no-repeat url(../img/icon_search.svg);
+  width: 16px;
+  height: 16px;
+  margin-right: 22px;
+}
+
+.search-form__input {
+  background: none;
+  border: none;
+  font-size: 15px;
+  font-weight: 300;
+  margin-right: auto;
+}
+
+.search-form__input:focus {
+  outline: none;
+}
+
+.search-form__button {
+  background: none;
+  border: 2px solid var(--basic-black);
+  padding: 15px 17px;
+  text-transform: uppercase;
+  visibility: hidden;
+}
+
+.search-form__button:hover {
+  background-color: var(--basic-black);
+  color: var(--basic-white);
+}
+
+.search-form__button:focus {
+  background-color: var(--basic-black);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.search-form__underline {
+  position: absolute;
+  height: 2px;
+  background-color: var(--basic-black);
+  width: 100%;
+  bottom: 0;
+  visibility: hidden;
+}
+
+.search-form__input:focus~.search-form__button,
+.search-form__input:focus~.search-form__underline {
+  visibility: visible;
+}
+
+/* user-action */
+
+.user-action a
+{
+  text-decoration: none;
+  color: var(--basic-black);
+}
+
+
+.user-action__sign-in::before {
+  content: "";
+  position: absolute;
+  background: no-repeat url(../img/icon_user.svg);
+  height: 14px;
+  width: 13px;
+}
+
+.user-action__compare::before {
+  content: "";
+  position: absolute;
+  background: no-repeat url(../img/icon_chart.svg);
+  height: 14px;
+  width: 14px;
+}
+
+.user-action__cart::before {
+  content: "";
+  position: absolute;
+  background: no-repeat url(../img/icon_cart.svg);
+  height: 10px;
+  width: 10px;
+}
+
