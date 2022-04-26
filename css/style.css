@@ -80,16 +80,6 @@ h2 {
   background-color: var(--special-yellow-light);
 }
 
-.main-header-nav {
-  font-family: "Gilroy";
-  font-weight: 800;
-  font-size: 18px;
-  text-transform: uppercase;
-}
-
-.main-header-nav ul {
-  list-style: none;
-}
 
 /* main-logo */
 
@@ -219,3 +209,93 @@ h2 {
   margin-right: 12px;
 }
 
+/* main-header-nav */
+
+.main-header-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-transform: uppercase;
+  font-family: "Gilroy";
+  font-weight: 800;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.main-header-nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.main-header-details__list {
+  list-style: none;
+  padding: 0;
+  flex: 1;
+  margin-right: 10px;
+  text-transform: none;
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 15px
+}
+
+.main-header-nav__link {
+  text-decoration: none;
+  color: var(--basic-black);
+}
+
+.main-header-nav__link:hover {
+  opacity: 0.6;
+}
+
+.main-header-nav__link:active {
+  opacity: 0.3;
+}
+
+.main-header-nav__catalog-summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 18px;
+}
+
+.main-header-nav__catalog-summary:hover > .main-header-nav_summary-text{
+  opacity: 0.6;
+}
+
+.main-header-nav__catalog-summary:active > .main-header-nav_summary-text{
+  opacity: 0.3;
+}
+
+.main-header-nav_summary-text {
+  margin-right: 16px;
+}
+
+.main-header-nav__catalog-summary::after {
+  content: "";
+  background: no-repeat url(../img/icon_plus.svg);
+  width: 22px;
+  height: 22px;
+}
+
+.main-header-nav__details-container {
+  padding: 0;
+  padding-top: 12px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 146px;
+}
+
+.main-header-details__item {
+  margin-bottom: 20px;
+}
+
+.main-header-nav__item:first-child {
+  margin-right: 38px;
+}
+
+.main-header-nav__item:nth-child(2) {
+  margin-right: auto;
+}
