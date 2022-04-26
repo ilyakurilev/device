@@ -74,14 +74,32 @@ h2 {
   font-size: 47px;
 }
 
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
 /* Header */
 
 .main-header {
   background-color: var(--special-yellow-light);
+  padding: 44px 60px 50px 60px;
+  margin-top: 40px;
+  position: relative;
 }
 
+.action-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 50px;
+}
 
 /* main-logo */
+
+.main-logo {
+  position: absolute;
+  top: -20px;
+}
 
 .main-logo:hover {
   opacity: 0.6;
@@ -124,11 +142,14 @@ h2 {
 }
 
 .search-form__button {
+  position: absolute;
+  right: 0;
+  bottom: -14px;
   background: none;
   border: 2px solid var(--basic-black);
   padding: 15px 17px;
   text-transform: uppercase;
-  visibility: hidden;
+  display: none;
 }
 
 .search-form__button:hover {
@@ -146,13 +167,13 @@ h2 {
   height: 2px;
   background-color: var(--basic-black);
   width: 100%;
-  bottom: 0;
-  visibility: hidden;
+  bottom: -14px;
+  display: none;
 }
 
 .search-form__input:focus~.search-form__button,
 .search-form__input:focus~.search-form__underline {
-  visibility: visible;
+  display: block;
 }
 
 /* user-action */
@@ -219,6 +240,7 @@ h2 {
   font-weight: 800;
   font-size: 18px;
   text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
 
 .main-header-nav__list {
@@ -231,12 +253,12 @@ h2 {
 .main-header-details__list {
   list-style: none;
   padding: 0;
-  flex: 1;
-  margin-right: 10px;
+  margin: 0;
   text-transform: none;
   font-family: "Open Sans";
   font-weight: 300;
-  font-size: 15px
+  font-size: 15px;
+  letter-spacing: normal;
 }
 
 .main-header-nav__link {
@@ -257,7 +279,6 @@ h2 {
   display: flex;
   align-items: center;
   cursor: pointer;
-  margin-bottom: 18px;
 }
 
 .main-header-nav__catalog-summary:hover > .main-header-nav_summary-text{
@@ -281,14 +302,13 @@ h2 {
 
 .main-header-nav__details-container {
   padding: 0;
-  padding-top: 12px;
+  padding-top: 30px;
   margin: 0;
   display: flex;
   justify-content: space-between;
-  height: 146px;
 }
 
-.main-header-details__item {
+.main-header-details__item:not(.main-header-details__item:last-child) {
   margin-bottom: 20px;
 }
 
