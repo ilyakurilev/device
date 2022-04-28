@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page">
   <header class="main-header container">
     <div class="main-logo">
       <a>
@@ -73,49 +73,74 @@
     </nav>
   </header>
 
-  <main>
-    <h1>Device</h1>
+  <main class="main">
+    <h1 hidden>Device</h1>
 
-    <section>
-      <h2>Интересные гаджеты</h2>
+    <section class="slider container">
+      <h2 hidden>Интересные гаджеты</h2>
+      <div class="slider__background-line"></div>
+      <article class="slider-item">
+        <img class="slider-item__img" src="img/slide 1.png" alt="Селфи-палка" width="384" height="486">
+        <div class="slider-item__info">
+          <div class="slider-item__decoration-line"></div>
+          <span class="slider-item__number">01</span>
+          <h3 class="slider-item__title">Делай селфи,<br>как Бен Стиллер! </h3>
+          <p class="slider-item__description">
+            Самая длинная палка для селфи доступна в нашем магазине.<br>
+            Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+          </p>
+          <a class="slider-item__more-link link action-element-inscription action-element-inscription_background-line"
+            href="blank.html">Подробнее</a>
+          <ul class="slider-item__feature-list list">
+            <li class="slider-item__feature-item">
+              <p class="slider-item__feature-value">8,5 м</p>
+              <p class="slider-item__feature-key">Длина палки</p>
+            </li>
+            <li class="slider-item__feature-item">
+              <p class="slider-item__feature-value">5 кг</p>
+              <p class="slider-item__feature-key">Вес палки</p>
+            </li>
+            <li class="slider-item__feature-item">
+              <p class="slider-item__feature-value">Карбон</p>
+              <p class="slider-item__feature-key">Материал</p>
+            </li>
+          </ul>
+        </div>
 
-      <article>
-        <span>01</span>
-        <img src="img/slide 1.png" alt="Селфи-палка" width="384" height="486">
-        <h3>Делай селфи,<br>как Бен Стиллер! </h3>
-        <p>
-          Самая длинная палка для селфи доступна в нашем магазине.<br>
-          Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-        </p>
-        <a href="blank.html">Подробнее</a>
-        <ul>
-          <li>8,5 м<br>Длина палки</li>
-          <li>5 кг<br>Вес палки</li>
-          <li>Карбон<br>Материал</li>
-        </ul>
+        <div class="slider__navigation">
+          <div class="slider__dot slider__dot_active"></div>
+          <div class="slider__dot"></div>
+          <div class="slider__dot"></div>
+        </div>
+
       </article>
-      <article>
-        <span>02</span>
-        <img src="img/slide 2.png" alt="Фитнес-браслет" width="345" height="485">
+
+
+      <article class="slider__item" hidden>
+        <span class="slider__number">02</span>
+        <img class="slider__img" src="img/slide 2.png" alt="Фитнес-браслет" width="345" height="485">
         <h3>Худеем<br>правильно!</h3>
         <p>
           Мотивирующие фитнес-браслеты помогут найти в себе силы<br>
           не пропускать занятия и соблюдать диету.
         </p>
-        <a href="blank.html">Подробнее</a>
+        <a class="link action-element-inscription action-element-inscription_background-line"
+          href="blank.html">Подробнее</a>
         <ul>
           <li>48 часов<br>Без подзарядки</li>
         </ul>
       </article>
-      <article>
-        <span>03</span>
-        <img src="img/slide 3.png" alt="Квадракоптер" width="526" height="334">
+
+      <article class="slider__item" hidden>
+        <span class="slider__number">03</span>
+        <img class="slider__img" src="img/slide 3.png" alt="Квадракоптер" width="526" height="334">
         <h3>Порхает как бабочка,<br>жалит как пчела!</h3>
         <p>
           Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
           мощным лазером, замаскированным под стандартную камеру.
         </p>
-        <a href="blank.html">Подробнее</a>
+        <a class="link action-element-inscription action-element-inscription_background-line"
+          href="blank.html">Подробнее</a>
         <ul>
           <li>800 м<br>Дальность полета</li>
           <li>50 м<br>Радиус поражения</li>
