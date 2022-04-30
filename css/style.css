@@ -364,6 +364,7 @@ h2 {
 
 .slider {
   position: relative;
+  margin-bottom: 76px;
 }
 
 .slider__background-line {
@@ -401,6 +402,7 @@ h2 {
 
 .slider-item__info {
   padding-top: 51px;
+  margin-bottom: 20px;
 }
 
 .slider-item__decoration-line {
@@ -490,4 +492,51 @@ h2 {
 
 .hidden {
   display: none;
+}
+
+/* catalog-nav */
+
+.catalog-nav {
+  padding: 20px 0;
+  margin-bottom: 49px;
+}
+
+.catalog-nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-nav__item:hover .catalog-nav__img-container {
+  background-color: var(--special-yellow-dark);
+}
+
+.catalog-nav__item:active .catalog-nav__img-container {
+  background-color: var(--special-yellow-dark);
+}
+
+.catalog-nav__item:active .catalog-nav__img {
+  opacity: 0.3;
+}
+
+.catalog-nav__img-container {
+  width: 160px;
+  height: 160px;
+  background-color: var(--special-yellow-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 38px;
+}
+
+.catalog-nav_inscription {
+  font-family: "Gilroy";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  margin: 0
+}
+
+.catalog-nav__item:active .catalog-nav_inscription {
+  opacity: 0.3;
 }
