@@ -68,12 +68,6 @@ body {
   color: var(--basic-black);
 }
 
-h2 {
-  font-family: "Gilroy";
-  font-weight: 800;
-  font-size: 47px;
-}
-
 .container {
   width: 1160px;
   margin: 0 auto;
@@ -101,8 +95,18 @@ h2 {
   text-align: center;
 }
 
+.subtitle {
+  font-family: "Gilroy";
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+  letter-spacing: 0.2em;
+  margin: 0;
+  padding: 0;
+}
+
 .action-element-inscription_background-line {
-  display: inline-block;
+  display: block;
   padding: 9px 0;
   background-image: linear-gradient(transparent 16px, var(--special-yellow-dark) 16px, var(--special-yellow-dark) 24px, transparent 24px);
 }
@@ -113,6 +117,9 @@ h2 {
 .action-element-inscription_background-line:active {
   color:rgba(0, 0, 0, 0.3);
 }
+
+.action-element-inscription_background-line
+
 
 /* Header */
 
@@ -490,10 +497,6 @@ h2 {
   background: no-repeat url(../img/slider-button.svg);
 }
 
-.hidden {
-  display: none;
-}
-
 /* catalog-nav */
 
 .catalog-nav {
@@ -539,4 +542,111 @@ h2 {
 
 .catalog-nav__item:active .catalog-nav_inscription {
   opacity: 0.3;
+}
+
+
+/* services */
+
+.services {
+  height: 403px;
+  position: relative;
+}
+
+.services__background {
+  height: 288px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -2;
+  background-color: var(--basic-grey-light);
+}
+
+.services__wrapper {
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 68px;
+}
+
+.services__list {
+  position: relative;
+  top: 80px;
+  width: 277px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.services__item {
+  position: relative;
+  margin-bottom: 21px;
+  width: 160px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.services__item:hover {
+  background-color: var(--special-yellow-dark);
+}
+
+.services__item--active,
+.services__item--active:hover {
+  color: var(--special-yellow-light);
+  background-color: var(--basic-black);
+  border-right: 117px solid var(--basic-black);
+  width: 100%;
+}
+
+.services__item-text {
+  font-family: "Gilroy";
+  font-weight: 800;
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.services__item-background {
+  height: 7px;
+  background-color: var(--special-yellow-dark);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: -1;
+}
+
+.services__line {
+  height: 320px;
+  width: 7px;
+  background-color: var(--basic-black);
+}
+
+.services__description {
+  display: flex;
+  justify-content: space-between;
+  width: 873px;
+  padding-left: 116px;
+}
+
+.services__title {
+  margin-bottom: 40px;
+}
+
+.services__text {
+  line-height: 30px;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+
+
+.hidden {
+  display: none;
 }

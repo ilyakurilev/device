@@ -216,40 +216,61 @@
       </ul>
     </section>
 
-    <section>
-      <h2>Услуги</h2>
-      <ul>
-        <li>Доставка</li>
-        <li>Гаоантия</li>
-        <li>Кредит</li>
-      </ul>
-      <div>
-        <h3>Доставка</h3>
-        <p>
-          Мы с удовольствием доставим ваш товар прямо к вашему<br>
-          подъезду совершенно бесплатно! Ведь мы неплохо<br>
-          заработаем, поднимая его на ваш этаж.
-        </p>
-        <img src="img/delivery.svg" alt="">
-      </div>
-      <div>
-        <h3>Гарантия</h3>
-        <p>
-          Если из-за возгорания купленного у нас товара у вас сгорит<br>
-          дом — не переживайте, мы выдадим вам новый.<br>
-          Товар, не дом, конечно же.
-        </p>
-        <img src="img/warranty.svg" alt="">
-      </div>
-      <div>
-        <h3>Кредит</h3>
-        <p>
-          Залезть в долговую яму стало проще! Кредитные<br>
-          консультанты подберут для вас наиболее выгодные<br>
-          условия кредита. Выгодные для нашего банка, разумеется.</p>
-        <img src="img/credit.svg" alt="">
-      </div>
+    <section class="services">
+      <h2 hidden>Услуги</h2>
+      <div class="container services__wrapper">
+        <ul class="services__list list">
+          <li class="services__item services__item--active">
+            <p class="services__item-text">Доставка</p>
+            <div class="services__item-background"></div>
+          </li>
+          <li class="services__item">
+            <p class="services__item-text">Гарантия</p>
+            <div class="services__item-background"></div>
+          </li>
+          <li class="services__item">
+            <p class="services__item-text">Кредит</p>
+            <div class="services__item-background"></div>
+          </li>
+        </ul>
+        <div class="services__line"></div>
 
+        <div class="services__description">
+          <div class="services__info">
+            <h3 class="subtitle services__title">Доставка</h3>
+            <p class="services__text">
+              Мы с удовольствием доставим ваш товар прямо к вашему<br>
+              подъезду совершенно бесплатно! Ведь мы неплохо<br>
+              заработаем, поднимая его на ваш этаж.
+            </p>
+          </div>
+          <img class="services__img" src="img/delivery.svg" alt="" width="136" height="164">
+        </div>
+
+        <div class="services__description hidden">
+          <div class="services__info">
+            <h3 class="subtitle services__title">Гарантия</h3>
+            <p class="services__text">
+              Если из-за возгорания купленного у нас товара у вас сгорит<br>
+              дом — не переживайте, мы выдадим вам новый.<br>
+              Товар, не дом, конечно же.
+            </p>
+          </div>
+          <img class="services__img" src="img/warranty.svg" alt="" width="171" height="195">
+        </div>
+
+        <div class="services__description hidden">
+          <div class="services__info">
+            <h3 class="subtitle services__title">Кредит</h3>
+            <p class="services__text">
+              Залезть в долговую яму стало проще! Кредитные<br>
+              консультанты подберут для вас наиболее выгодные<br>
+              условия кредита. Выгодные для нашего банка, разумеется.</p>
+          </div>
+          <img class="services__img" src="img/credit.svg" alt="" width="156" height="188">
+        </div>
+      </div>
+      <div class="services__background"></div>
     </section>
 
     <section>
