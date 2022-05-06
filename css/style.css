@@ -664,6 +664,114 @@ body {
   opacity: .2;
 }
 
+/* company-info */
+
+.company-info {
+  display: flex;
+  justify-content: space-between;
+  height: 580px;
+  margin-bottom: 86px;
+}
+
+.company-info__line {
+  height: 7px;
+  width: 80px;
+  background-color: var(--basic-black);
+  margin-bottom: 50px;
+}
+
+.company-info__title {
+  margin-bottom: 50px;
+}
+
+.company-info__text {
+  line-height: 28px;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.about {
+  width: 473px;
+  height: 100%;
+  position: relative;
+}
+
+.about__list {
+  padding-top: 20px;
+  margin-bottom: 75px;
+}
+
+.about__item {
+  padding-left: 32px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.about__item::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 0;
+  background: no-repeat url(../img/ellipse.svg);
+  width: 8px;
+  height: 8px;
+}
+
+.about__item-text {
+  font-family: "Gilroy";
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--basic-black);
+  padding: 0;
+  margin: 0;
+}
+
+.company-info__link {
+  display: block;
+  width: 260px;
+  position: absolute;
+  bottom: 0;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+.company-info__link:hover {
+  background-color: var(--special-yellow-dark);
+}
+
+.company-info__link:active {
+  background-color: var(--special-yellow-dark);
+  color: rgba(0, 0, 0, .3);
+}
+
+.company-info__link-background-line {
+  height: 8px;
+  background-color: var(--special-yellow-dark);
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.company-info__link-text {
+  margin: 0;
+  padding: 0;
+}
+
+.contacts {
+  width: 560px;
+  height: 100%;
+  position: relative;
+}
+
+.contacts__img {
+  margin-bottom: 74px;
+}
+
 .hidden {
   display: none;
 }
