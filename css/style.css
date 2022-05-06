@@ -550,6 +550,7 @@ body {
 .services {
   height: 403px;
   position: relative;
+  margin-bottom: 90px;
 }
 
 .services__background {
@@ -646,6 +647,22 @@ body {
   margin: 0;
 }
 
+
+/* partners */
+
+.partners {
+  margin-bottom: 90px;
+}
+
+.partners__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.partners__link:hover {
+  filter: grayscale(100%);
+  opacity: .2;
+}
 
 .hidden {
   display: none;
